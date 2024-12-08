@@ -8,11 +8,7 @@ function getWeather(city) {
 }
 
 function showInApp(data) {
-  let html = `<div class="search-bar">
-        <input type="text" id="search-input" placeholder="Enter a city..." />
-        <button id="search-button">Search</button>
-        <div class="app"></div>
-      </div>
+  let html = `
       <div class="header">
         <h1>Weather Report</h1>
         <h2 id="place">${data.location.country} , ${data.location.name}</h2>
